@@ -11,7 +11,7 @@ import { query, update } from "firebase/database";
 import {
   doc,
   getDoc,
-  setDoc,
+  
   onSnapshot,
   collection,
   getDocs,
@@ -100,6 +100,7 @@ const Sidebar = () => {
     };
   }, [currentUser, db, dispatch, fav]);
 
+ 
   useEffect(() => {
     const getUser = async () => {
       if (currentUser?.uid) {
